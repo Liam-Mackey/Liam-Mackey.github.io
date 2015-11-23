@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>Blog Post 2</title>
+    <meta name="description" content="Blog posts by Liam Mackey">
+</head>
+<body>
+    <header>
+        <h1 class="title" >Margins, Borders, and Padding: The CSS Keys</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html">Blog Posts</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div class="float-right">
+            <h2 class="head2">Blog Posts</h2>
+            <ol>
+                <li><a href="git.html">Week 1</a></li>
+                <li><a href="css-concepts.html">Weeks 2 and 3</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+                <li><a href="#">Link5</a></li>
+                <li><a href="#">Link6</a></li>
+                <li><a href="#">Link7</a></li>
+            </ol>
+        </div>
+    </aside>
+    <div>
+        <img src="http://www.w3schools.com/css/box-model.gif" alt="Image from blog post"/>
+     </div>
+     <main>
+         <section class="blog-post">
+             <h2 class="head2" >11/25/2015</h2>
+             <h2 class="head2">What is the difference between Margin, Border, and Padding?</h2>
+                 <p class="main-paragraph">Well for starters Margin, Border, and Padding are key:value pairs that are used in CSS, a web design language, to help determine the dimensions of content.</p>
+                 <p class="main-paragraph">Before I go into the detailed web design description of the difference between Margin, Border, and Padding let me give you an example: Imagine we are moving a very delicate antique vase that our Depression era grandmother gave us. It is her pride and joy. So obviously we want to be very careful with it. The vase itself represents what we call content in CSS, that could be a paragraph, image, heading etc.. The bubble wrap we put around the vase, to keep it from touching the inside of the box, is representative of the Padding key:value pair in CSS. The box itself is what we would call a border in CSS. It is effectively the end of the extension of our content. We can make the border thin or thick just like we can use a thick wooden box or a thin cardboard box. Lastly, we wouldn’t want to put Nana’s vase near any other heavy items in the moving truck because they could fall on it and smash it. The space separating our box from other boxes represents the Margin key:value pair. That’s a very basic explanation of how Margin, Border, and Padding determine the dimensions of and spaces in-between content in CSS.</p>
+                 <p class="main-paragraph">If you look at the image provided you might notice that it provides a nice visual demonstration of what we were just talking about. A couple things to mention about these key:value pairs in CSS that are a bit more complex and detailed. First, margins in CSS will collapse to the largest margin if they are touching. For example, if we have our paragraph with a margin of 2px and our heading with a margin of 4px and they are touching then the 2px margin dissolves and the 4px one takes precedence. Second, unlike a box we can add margins, borders, and padding to however many sides of the object we like. Let's say we only wanted padding on the bottom and a border on the top for example we could do this by saying “border-top: 2px;” and “padding-bottom: 10px;”. So as you can see with CSS we can specify our dimensions fairly well. Lastly, I just want to mention the border key:value pair is highly customizeable. We can change the style, color, thickness, and even use an image for the border. I hope you now understand the difference between Margin, Border, and Padding. Now go forth and code!</p>
+         </section>
+     </main>
+     <hr>
+      <section class="blog-post">
+         <h2 class="head2" >11/11/2015</h2>
+         <h2 class="head2">Week 1</h2>
+         <p class="main-paragraph">I just started attending Dev Bootcamps Phase-0! I am beginning to use git and github. I am also starting to understand what version-control software is exactly. Simply put it allows you to look back at every single edit you made to your files when you saved (or in git language 'committed') them. It is very helpful in figuring out where and when you made an error in your code. Software like git and github also allow multiple people to work on the same project at once without overwriting each other. This is incredibly helpful when you are working with a team.</p>
+         <p class="main-paragraph">The software for version control, at least on github is git. Git helps you keep track of changes by saving your files and the changes you made to them with commit. Using 'git log' you can also look back at every change you have made. The using the 'HEAD*' tag you can go back to any of your commits and start fresh. It is an amazing system that I hope to use more and more. Git is operated by using the Command Line Interface (CLI). The CLI was hard to learn at first, but I soon got the hang of it, and now it is really fun to use. I suggest you check it out!</p>
+         <p class="main-paragraph">So what's the difference between Git and Github? Well, git runs locally on your computer whereas Github runs remotely online. Using Github is incredibly important as it helps you share you work with other people. They could be your team or even the entire github community. To use github you need to master the art of the pull request. This request will help you merge the code on your computer onto Github. Once it's up there you can share it with anyone. I do suggest doing some research on licenses before posting your code online. I can't wait to continue learning using git and Github!</p>
+         <p class="main-paragraph">I had an awesome time meeting with my instructor and some of my cohort mates during the intro session this week. I can't wait to start learning more and meet even more people from my cohort. I am expecting to make tons of friends during my DBC experience. I can’t wait to get started on next week's challenges. Have a great weekend!</p>
+      </section>
+      <hr>
+             <footer>
+                <div class="blog-footer" >
+                <ul>
+                        <li class="footer-li" >Contact Info</li>
+                    <ul>
+                        <li class="footer-li-2" >Name: Liam Mackey</li>
+                        <li class="footer-li-2" >Phone: 631-926-9213</li>
+                    </ul>
+                        <li class="footer-li" >Email</li>
+                    <ul>
+                        <li class="footer-li-2" ><a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></li>
+                    </ul>
+                </ul>
+                </div>
+             </footer>
+</body>
+</html>
