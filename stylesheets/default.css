@@ -1,3 +1,107 @@
-h1 {
+body {
+	background-color: rgba(102,153,153,0.3);
+}
+
+.title {
 	text-align: center;
+	font-family: 'Lora', serif;
+	font-size: 50px;
+	margin: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1.5em;
+}
+
+nav ul {
+	padding: 20px;
+	border: solid;
+	border-radius: 20px;
+	min-width: 50%;
+	text-align: center;
+	background-color: rgba(240,240,230,0.5);
+	box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.3);
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+	color: #00b300;
+}
+
+a:visited {
+	color: #660066;
+}
+
+a:active {
+	color: #ff0000;
+}
+
+img {
+	float: right;
+	border: 2px solid black;
+	margin: 10px;
+}
+
+.head2 {
+	font-family: 'Lora', serif;
+	font-size: 30px;
+}
+
+.head3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.main-paragraph {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#Top {
+	margin: 20px;
+}
+
+.main-paragraph:first-letter {
+	font-size: 30px;
+}
+
+.final-span {
+	color: #336600;
+	font-weight: bold;
+}
+
+.footer {
+	width: 90%;
+	height: 20%;
+	background-color: rgba(128,128,128, 0.3);
+	padding: 35px;
+	margin: 35px;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+.footer ul {
+	text-align: center;
+	list-style-type: none;
+}
+.footer-li {
+	font-family: Courier;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.footer ul ul li {
+	font-size: 18px;
 }

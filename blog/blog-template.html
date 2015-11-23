@@ -1,5 +1,6 @@
 <!--
 How was it to wireframe and create an HTML page with a pair?
+Here is the link to our wireframe "https://github.com/Liam-Mackey/Liam-Mackey.github.io/blob/master/imgs/blog-template-wireframe.png"
 I had a blast creating a HTML wireframe with my pair. We both shared a lot of information and learned a lot. He gave me some links to cool wireframing sites and deffinetly made me a better wireframer!
 Did you find wireframing to be helpful to your development process?
 I absolutley found wireframing helpful it gave me a skeleton to add muscle and skin to to make my website. 
@@ -10,54 +11,79 @@ I learned a lot about the aside and main tags and effectivley used them in my si
 We added the wireframe before the header but it wont be there when we make our blog posts
 -->
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 	<title>Blog Template</title>
+    <meta name="description" content="Blog posts by Liam Mackey">
 </head>
 <body>
-	<img src="../imgs/blog-template-wireframe.png" />
     <header>
-        <h1>BlogPost</h1>
+        <h1 class="title" >Blog Post Title</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="#">Blogs</a></li>
+                <li><a href="index.html">Blog Posts</a></li>
                     
             </ul>
         </nav>
     </header>
     <aside>
-        <h2>Blog Posts</h2>
-        <ol>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
-            <li><a href="#">Link4</a></li>
-            <li><a href="#">Link5</a></li>
-            <li><a href="#">Link6</a></li>
-            <li><a href="#">Link7</a></li>
-        </ol>
+        <div class="float-right">
+            <h2 class="head2">Blog Posts</h2>
+            <ol>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+                <li><a href="#">Link5</a></li>
+                <li><a href="#">Link6</a></li>
+                <li><a href="#">Link7</a></li>
+            </ol>
+        </div>
     </aside>
     <div>
         <img src="#" alt="Image from blog post"/>
      </div>
      <main>
-         <section>
-             <h2>Date</h2>
-                 <p>Blog text goes here</p>
+         <section class="blog-post">
+             <h2 class="head2" >Date of New Blog Post</h2>
+                 <p class="main-paragraph">Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here.</p>
+                 <p class="main-paragraph">Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here.</p>
+                 <p class="main-paragraph">Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here.</p>
+                 <p class="main-paragraph">Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here. Blog text goes here.</p>
          </section>
      </main>
+     <hr>
      <div>
         <img src="#" alt="Image from blog post"/>
      </div>
-      <section>
-         <h2>Date</h2>
-         <p>Blog text goes here</p>
+      <section class="blog-post">
+         <h2 class="head2" >Date of Old Blog Post</h2>
+         <p class="main-paragraph">Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here.</p>
+         <p class="main-paragraph">Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here.</p>
+         <p class="main-paragraph">Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here.</p>
+         <p class="main-paragraph">Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here. Old blog text goes here.</p>
       </section>
+      <hr>
              <footer>
-                 <p>Footer- Author and author's email</p>
+                <div class="blog-footer" >
+                <ul>
+                        <li class="footer-li" >Contact Info</li>
+                    <ul>
+                        <li class="footer-li-2" >Name: Liam Mackey</li>
+                        <li class="footer-li-2" >Phone: 631-926-9213</li>
+                    </ul>
+                        <li class="footer-li" >Email</li>
+                    <ul>
+                        <li class="footer-li-2" ><a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></li>
+                    </ul>
+                </ul>
+                </div>
              </footer>
 </body>
 </html>
