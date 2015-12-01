@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>Blog Template</title>
+    <meta name="description" content="Blog posts by Liam Mackey">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1 class="title" >Arrays and Hashes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html">Blog Posts</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div class="float-right">
+            <h2 class="head2">Blog Posts</h2>
+            <ol>
+                <li><a href="git.html">Week-1</a></li>
+                <li><a href="css-concepts.html">Weeks-2-3</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+                <li><a href="#">Link5</a></li>
+                <li><a href="#">Link6</a></li>
+                <li><a href="#">Link7</a></li>
+            </ol>
+        </div>
+    </aside>
+    <div>
+        <img src="https://s3.amazonaws.com/static.written.com/Array21416261245.gif" alt="Image for blog post"/>
+     </div>
+     <main>
+         <section class="blog-post">
+             <h2 class="head2" >12/1/2015</h2>
+                 <p class="main-paragraph">So now that we are learning to be ruby programmers we have to learn about arrays and hashes, To explain it in a simple non technical way. Arrays are like lists. When you make a christmas shopping list you have items like “toy”, “Shirt”, and “Book” on there. These could all be elements in your array. You can access them by looking at the list and looking at the second Item and you get “Shirt”. In ruby we would write something like list[1] to get that value. The reason we are using 1 as the index value is because ruby starts counting at zero. Hashes are like tables. So what if I wanted to specify that “Shirt” is for Dan? Then I could use a hash. Hashes are made up of key:value pairs. The key here is “Shirt” the value is Dan. What I am saying is the item I am buying, “Shirt”, is for the value “Dan”.</p>
+                 <p class="main-paragraph">To get a bit more technical, arrays are used to house multiple scalar variables. What that means is basically an array is a list of variables that are accessible by using the array name and its index. The variables are stored at specific indexes in the array. You would use an array when making anything akin to a list. Beyond the scope of this post is the fact that you can have multidimensional and parallel arrays. A parallel array is two arrays side by side. Multidimensional arrays are like arrays within arrays, confusing right! Anyway you can store almost anything in an array even other arrays. So remember when you would use a list use an array!</p>
+                 <p class="main-paragraph">About hashes; hashes are basically tables they are often called hash tables. In a hash you have a key and a value. Your keys should be unique, your values can repeat themselves. You would use a hash whenever you need to make a table. Hashes can use strings or symbols for their keys and almost any value for their values. You can access a value in a hash by typing the hashes name and the values key, so it would look like hash[“Shirt”] which would return “Dan”. Remember you would use hashes anytime you use tables.</p>
+                 <p class="main-paragraph">I hope you guys learned a bit about hashes and arrays today! Thanks for checking out my blog! And checkout the code below to get started!</p>
+                 <pre><code>
+                    hash = Hash.new
+                    hash = {
+                        :toy => "Tom",
+                        :Shirt => "Dan",
+                        :Book => "Drew"
+                    }
+
+                    hash[:Shirt]
+
+                    list = ["toy", "Shirt", "Book"]
+                    list[1]
+                 </code></pre>
+         </section>
+     </main>
+     <hr>
+     <div>
+        <img src="http://www.w3schools.com/css/box-model.gif" alt="Image from blog post"/>
+     </div>
+      <section class="blog-post">
+         <h2 class="head2" >11/25/2015</h2>
+         <p class="main-paragraph">Well for starters Margin, Border, and Padding are key:value pairs that are used in CSS, a web design language, to help determine the dimensions of content.</p>
+         <p class="main-paragraph">Before I go into the detailed web design description of the difference between Margin, Border, and Padding let me give you an example: Imagine we are moving a very delicate antique vase that our Depression era grandmother gave us. It is her pride and joy. So obviously we want to be very careful with it. The vase itself represents what we call content in CSS, that could be a paragraph, image, heading etc.. The bubble wrap we put around the vase, to keep it from touching the inside of the box, is representative of the Padding key:value pair in CSS. The box itself is what we would call a border in CSS. It is effectively the end of the extension of our content. We can make the border thin or thick just like we can use a thick wooden box or a thin cardboard box. Lastly, we wouldn’t want to put Nana’s vase near any other heavy items in the moving truck because they could fall on it and smash it. The space separating our box from other boxes represents the Margin key:value pair. That’s a very basic explanation of how Margin, Border, and Padding determine the dimensions of and spaces in-between content in CSS.</p>
+         <p class="main-paragraph">If you look at the image provided you might notice that it provides a nice visual demonstration of what we were just talking about. A couple things to mention about these key:value pairs in CSS that are a bit more complex and detailed. First, margins in CSS will collapse to the largest margin if they are touching. For example, if we have our paragraph with a margin of 2px and our heading with a margin of 4px and they are touching then the 2px margin dissolves and the 4px one takes precedence. Second, unlike a box we can add margins, borders, and padding to however many sides of the object we like. Let's say we only wanted padding on the bottom and a border on the top for example we could do this by saying “border-top: 2px;” and “padding-bottom: 10px;”. So as you can see with CSS we can specify our dimensions fairly well. Lastly, I just want to mention the border key:value pair is highly customizeable. We can change the style, color, thickness, and even use an image for the border. I hope you now understand the difference between Margin, Border, and Padding. Now go forth and code!</p>
+      </section>
+      <hr>
+             <footer>
+                <div class="blog-footer" >
+                <ul>
+                        <li class="footer-li" >Contact Info</li>
+                    <ul>
+                        <li class="footer-li-2" >Name: Liam Mackey</li>
+                        <li class="footer-li-2" >Phone: 631-926-9213</li>
+                    </ul>
+                        <li class="footer-li" >Email</li>
+                    <ul>
+                        <li class="footer-li-2" ><a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></li>
+                    </ul>
+                </ul>
+                </div>
+             </footer>
+</body>
+</html>
