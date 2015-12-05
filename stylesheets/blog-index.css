@@ -19,13 +19,13 @@
 }
 
 ol li a {
-	font-family: serif;
+	font-family: 'Lora', serif;
 	font-size: 30px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 ol ul li {
-	font-family: sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-size: 25px;
 }
