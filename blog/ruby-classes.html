@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<title>Week 6 Blog Post</title>
+    <meta name="description" content="Blog posts by Liam Mackey">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1 class="title" >Ruby Classes</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about-me.html">About Me</a></li>
+                <li><a href="../contact.html">Contacts</a></li>
+                <li><a href="index.html">Blog Posts</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div class="float-right">
+            <h2 class="head2">Blog Posts</h2>
+            <ol>
+                <li><a href="git.html">Week 1</a></li>
+                <li><a href="css-concepts.html">Weeks 2 + 3</a></li>
+                <li><a href="arrays-hashes.html">Week 4</a></li>
+                <li><a href="enumerable-methods.html">Week 5</a></li>
+                <li><a href="ruby-classes.html">Week 6</a></li>
+                <li><a href="#">Link6</a></li>
+                <li><a href="#">Link7</a></li>
+            </ol>
+        </div>
+    </aside>
+    <div>
+        <img src="http://www.sloths.org/3-toedsloth.jpg" alt="Image from blog post"/>
+     </div>
+     <main>
+         <section class="blog-post">
+             <h2 class="head2" >12/15/2015</h2>
+             <p class="main-paragraph">So if you do not know what I just typed below you shouldn’t be worried, I am going to explain it. In short what I wrote is the template for a sloth. This template is called a class. Classes are used to organize methods and variables for objects together. You can think of methods being like actions the object can take and variables being its characteristics. A class is sort of like a blueprint for an Object (Which in programming can be pretty much anything).</p>
+                <pre><code style="font-size: 17px;">
+                    class Sloth
+                        attr_accessor :name, :species, :age
+
+                        def initialize(name, species, age)
+                            @name = name 
+                            @species = species
+                            @age = age
+                        end
+
+                        def yawn
+                            puts “Arrraghoow #{@name} is tired”
+                        end
+
+                        def sleep
+                            10.times{puts “Zzzzzzz”}
+                        end
+
+                        def eat(food)
+                            puts “#{@name} is eating #{food}”
+                        end
+
+                        def climb
+                            puts “A #{@age} year old #{@species} sloth named #{@name} is climbing a tree”
+                        end
+
+                        def print_info
+                            puts “Name: #{@name}”
+                            puts “Age: #{@age}”
+                            puts “Species: #{@species}”
+                        end
+                    end
+
+                    tim = Sloth.new(“Tim”, 3, “Three Toed”)
+
+                    p tim.name
+
+                    => “Tim”
+
+                    tim.eat(“Mango”) 
+                    => “Tim is eating Mango”
+
+                    tim.print_info
+                    => Name: Tim
+                    Age: 3
+                    Species: Three Toed
+                 </code></pre>
+                 <p class="main-paragraph">So what do we have here. As you can see I am declaring a class named Sloth. So what that does is basically allows me to layout a blueprint for all the sloths my program will create. The attr_accessor is a bit more confusing but for now just view it as a way for us to access the variables (characteristics of the sloth) outside of our Sloth class. The first method called initialize is automatically performed whenever we create a new sloth, like we did for tim. The arguments we give the method are the characteristics we need to create our sloth, each sloth must have a name, age, and species! As you may have noticed we have prefixed some of our variables with the @ symbol. This is because this symbol indicates them as being Instance variables. This means they can travel between methods in the class and are available to every instance of the class, i.e every sloth we create.</p>
+                 <p class="main-paragraph">All of the other methods besides initialize have to be called on. But as you may have noticed these methods are actions that a sloth would take, maybe with the exception of print_info. So this illustrates the point that methods in a class are sort of like actions the real world object would take. These are called instance methods because they are available to every instance of the Sloth class. So every sloth our program creates can yawn, sleep, eat, and climb, as well as print_info, but that is more of just for checking that our program is working right. </p>
+                 <p class="main-paragraph">You now know the basics of writing classes in ruby. I suggest that you give it a try. Classes are used in Object Oriented Programming to imitate the way things work in the real world. So maybe make a class for Car, or Cat or even Liam's crappy old Subaru. Now go forth and code!</p>
+         </section>
+     </main>
+     <hr>
+     <div>
+        <img src="https://14yunhyu.files.wordpress.com/2012/03/spin-arrows.gif" alt="Image from blog post"/>
+     </div>
+      <section class="blog-post">
+         <h2 class="head2" >12/8/2015</h2>
+         <p class="main-paragraph">Now that we are all learning about Ruby it is important to begin to use Enumerable methods. Although there are tons of these, in this blog post I will only be talking about one in particular. That method is Cycle. Cycle is an awesome built in ruby method. Basically it saves us the work of having to write long loops to iterate through each element in an enumerable several times.</p>
+         <p class="main-paragraph">We can think of the cycle method as a hula hoop. The value we give cycle tells the us how many times we want the hula hoop to do a full rotation. If we call 2 on cycle, as seen in the example below, we will repeat the elements in the enumerable 2 times, like swinging the hula twice. If we do not give cycle an argument we will end up with an infinite loop on our hands. You can do cool things with cycle. For example if you set a variable equal to an enumerable with cycle called on it, without a block of course, it will return an enumerable. You can then use the .next method to iterate through the enumerable. </p>
+         <p class="main-paragraph">You can also use the reverse_each method and call cycle on it to reverse cycle through an argument. This could be very helpful if you needed to implement a block of code on an enumerable forever, but in reverse. </p>
+         <p class="main-paragraph">The cycle method is very useful. We could use it to write a program that cycles through chores and assigns them to different individuals throughout the week. We could also use it to loop a set number of times over an array and print out the variables while a program is loading. There are tons of uses for the cycle method. I hope that you guys will get to use this method in the future.  I think it will come in handy for me at some point too.</p>
+      </section>
+      <hr>
+    <footer>
+        <div class="footer">
+        <p class="main-footer"><b>Contact Info</b></p>
+        <p><b>Author:</b> Liam Mackey</p>
+        <p><b>Email:</b> <a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></p>
+        <p><b>Phone:</b> 631-926-9213</p>
+        </div>
+    </footer>
+</body>
+</html>
