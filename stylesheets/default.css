@@ -1,24 +1,28 @@
 body {
 	background-color: rgba(186,197,167,0.8);
+	margin: 5px;
 }
 
 .title {
 	text-align: center;
 	font-family: 'Lora', serif;
 	font-size: 50px;
-	margin: 40px;
+	margin: 35px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	word-spacing: 1.5em;
 }
 
 nav ul {
-	padding: 20px;
-	border: solid;
-	border-radius: 20px;
+	width: 97%;
+	padding: 10px;
+	border: 3px solid;
+	/*border-radius: 20px;*/
+	margin: 5px;
 	min-width: 50%;
 	text-align: center;
-	background-color: rgba(214,229,187,0.6);
+	/*background-color: rgba(214,229,187,0.6);*/
+	background-color: rgba(128,128,128,0.3);
 	box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.3);
 }
 
@@ -44,6 +48,10 @@ a:visited {
 	color: #660066;
 }
 
+a:visited:hover {
+	color: #FF9933;
+}
+
 a:active {
 	color: #ff0000;
 }
@@ -52,6 +60,13 @@ img {
 	float: right;
 	border: 2px solid black;
 	margin: 10px;
+}
+
+.index-img {
+	float: right;
+	border: 2px solid black;
+	margin: 10px;
+	border-radius: 100%;
 }
 
 .head2 {
