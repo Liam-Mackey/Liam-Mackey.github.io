@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<title>Week 8 Blog Post</title>
+    <meta name="description" content="Blog posts by Liam Mackey">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1 class="title" >Functional Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about-me.html">About Me</a></li>
+                <li><a href="../contact.html">Contacts</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="index.html">Blog Posts</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div class="float-right">
+            <h2 class="head2">Blog Posts</h2>
+            <ol>
+                <li><a href="git.html">Week 1</a></li>
+                <li><a href="css-concepts.html">Weeks 2 + 3</a></li>
+                <li><a href="arrays-hashes.html">Week 4</a></li>
+                <li><a href="enumerable-methods.html">Week 5</a></li>
+                <li><a href="ruby-classes.html">Week 6</a></li>
+                <li><a href="JavaScript.html">Week 7</a></li>
+                <li><a href="tech.html">Week 8</a></li>
+            </ol>
+        </div>
+    </aside>
+     <div>
+        <img src="https://college.georgetown.edu/sites/college/files/files/upload/CalculusReadinessBannerImage.jpg" alt="Image from blog post"/>
+     </div>
+     <main>
+         <section class="blog-post">
+             <h2 class="head2" >1/4/2016</h2>
+                 <p class="main-paragraph">What exactly is functional programming? Functional programming is basically programming built around functions. Now if you know ruby or javascript you have an idea of what a function is already. It is a bit of code that performs a task and returns a value. Functional programming is a type of programming where you use functions to accomplish tasks.</p>
+                 <p class="main-paragraph">As opposed the most popular type of programming, imperative programming, functional programming is based off lambda calculus. There are a couple of basic concepts to understand when practicing functional programming. First, are Higher Order and first class functions. Higher Order functions return other functions as their return value, and first class functions can be used anywhere in a program. These are useful when passing information between functions and when implementing recursive functions. Second, functions in functional programming should be immutable this simply means they cannot be changed, so instead of altering an array you create an whole new one. Third, functions in functional programming should be stateless, meaning they always operate as if it is their first time operating, they don't rely on data that is not passed to the function. Lastly, you need to understand recursion, which is many things but one of which is a handy method to avoid looping. Recursion is basically calling the function itself inside the function. You would do this as an alternative to looping. It also makes programs more efficient. </p>
+                 <p class="main-paragraph">There are several functional programing languages like Haskell, Erlang, and Scala. These and many other functional programming languages were originally designed for academic use, except Scala. Functional programming is less memory efficient than imperative programming, so therefore less popular. There are companies that use functional programming for more math related operations in engineering and data science. One of these is twitter which designed the functional programming language scala to help with its data analysis.</p>
+                 <p class="main-paragraph">All in all it is important to understand the concepts behind functional programming because they make us better programmers even if we only use imperative languages.</p>
+         </section>
+     </main>
+     <hr>
+     <div>
+        <img src="http://stasiab.files.wordpress.com/2012/01/sloth5.jpg" alt="Image from blog post" alt="Image from blog post"/>
+     </div>
+      <section class="blog-post">
+             <h2 class="head2" >12/21/2015</h2>
+                 <p class="main-paragraph">Ruby classes are templates for objects in ruby programming. JavaScript constructors are Prototypes for objects in JavaScript Programming. So why the difference and how do these techniques relate and differ? Lets dive right into that!</p>
+                 <p class="main-paragraph">JavaScript is a classless Object Orientated Programming (OOP) language. What this means is that JavaScript accomplished the feats of classes in languages like ruby by using a special type of function called a constructor. A constructor function basically lays out the template for all Objects that inherit from the constructor object as well as all instances of the constructor object.</p>
+                 <p class="main-paragraph">Ruby is an OOP language as well. In ruby however you can and must use classes to lay out the format for objects. In Ruby each class has an initialize method that is called when an instance of the class is created. Ruby classes can also have instance methods, which are the same thing as functions in JavaScript, Instance methods basically allow any instance of that class to have access to those methods.</p>
+                 <p class="main-paragraph">Ruby classes and JavaScript constructor functions are similar in that they both are templates for all new instances of the themselves. In ruby you can add methods (i.e functions) right into the class however in JavaScript it is common practice to add functions (i.e methods) with a prototype method. This allows for all instances of the constructor function to have the added functions. This is one major difference. Another is that the syntax for constructor functions and classes is totally different. Take a look at last week’s post about the Ruby sloth class then see the partially completed JavaScript sloth constructor function. In reality both JavaScript constructor objects and Ruby Classes get the same job done, but I would say I find the idea of classes easier to implement and understand than constructor functions. Now go forth and code!</p>
+         </section>
+         <pre><code style="font-size: 17px;">
+            var Sloth = function(name, species, age){
+                this.name = name;
+                this.species = species;
+                this.age = age;
+            };
+            var timmy = new Sloth("Timothy Purple Haze Stweart", "Three Toed", 4);
+         </code></pre>
+      <hr>
+    <footer>
+        <div class="footer">
+        <p class="main-footer"><b>Contact Info</b></p>
+        <p><b>Author:</b> Liam Mackey</p>
+        <p><b>Email:</b> <a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></p>
+        <p><b>Phone:</b> 631-926-9213</p>
+        </div>
+    </footer>
+</body>
+</html>
