@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liam Mackey's Cheat Sheet</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Mate+SC' rel='stylesheet' type='text/css'>
+	<meta name="CheatSheet" description="A cheat sheet for dev bootcamp"/>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<header>
+  		<h1 class="title" >Liam Mackey's Projects</h1>
+  		<nav>
+  			<ul>
+  				<li><a href= "../about-me.html">About Me</a></li>
+  				<li><a href="../blog/index.html">Blog</a></li>
+  				<li><a href="../contact.html">Contact</a></li>
+  				<li><a href="../index.html">Home</a></li>
+  				<li><a href="index.html">Projects</a></li>
+  				<li><a href="https://github.com/Liam-Mackey">Github</a></li>
+  				<li><a href="https://www.linkedin.com/">Linkedin</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+  	<h1 class="cheathead">Cheat Sheet for Ruby Built In's</h1>
+  	<h2 class="cheathead2">Array's</h2>
+  	<p class="cheat"><span class="method">any?:</span> Returns true if any element in the array passes the code block test.</p>
+  	<p class="cheat"><span class="method">count{|item|block}:</span> Counts each item that passes the code block test. Returns integer.</p>
+  	<p class="cheat"><span class="method">cycle(num){|obj| block}:</span> Cycles through the array a certain number of times or forever and applies a code block.</p>
+  	<p class="cheat"><span class="method">delete_if{|obj| block}:</span> Deletes element if code returns true.</p>
+  	<p class="cheat"><span class="method">each_index{}:</span> Iterates through the array by index value.</p>
+  	<p class="cheat"><span class="method">flatten:</span> Turns multi demensional array's to single demensional</p>
+  	<p class="cheat"><span class="method">insert(value, index):</span> Places value at specific index.</p>
+  	<p class="cheat"><span class="method">map{|obj|block}:</span> Returns a new array with the values produced by the code block as it iterates through.</p>
+  	<p class="cheat"><span class="method">reverse_each{}:</span> Iterates through the array in reverse.</p>
+  	<p class="cheat"><span class="method">sort_by{}:</span> Sorts the array by the given code block.</p>
+  	<h2 class="cheathead2">Hashes</h2>
+  	<p class="cheat"><span class="method">each_key{}:</span> Iterates through the hash just using keys.</p>
+  	<p class="cheat"><span class="method">each_value{}:</span> Iterates through the has using just values.</p>
+  	<p class="cheat"><span class="method">length:</span> Returns the length of the hash</p>
+  	<p class="cheat"><span class="method">reject{}:</span> Deletes pair if code block returns true.</p>
+  	<p class="cheat"><span class="method">Select{}:</span> Keeps value if code block returns true.</p>
+  	<h2 class="cheathead2">Strings</h2>
+  	<p class="cheat"><span class="method">str[index]:</span> Returns the char at that index.</p>
+  	<p class="cheat"><span class="method">capitalize!:</span> Capitalizes string.</p>
+  	<p class="cheat"><span class="method">concat()</span> Concatenates two strings, if integer it takes the value as a code point</p>
+  	<p class="cheat"><span class="method">count():</span> Counts the amount of times a substring is prevelent in the string.</p>
+  	<p class="cheat"><span class="method">each_char{}:</span> Applies a code block to every character.</p>
+  	<p class="cheat"><span class="method">each_line{}:</span> Applies a code block to each line of the string.</p>
+  	<p class="cheat"><span class="method">gsub(pattern, replacemnet):</span> Preforms a global substitution.</p>
+  	<p class="cheat"><span class="method">insert(index, str):</span> Inserts a string at a specific index.</p>
+  	<p class="cheat"><span class="method">split():</span> Takes string and turns it into an array.</p>
+  	<p class="cheat"><span class="method">prepend(str):</span> Adds string to the start of the string.</p>
+  	<h2 class="cheathead2">Numeric's and Enumerable's</h2>
+  	<p class="cheat"><span class="method">abs2:</span> Returns square of self.</p>
+  	<p class="cheat"><span class="method">ceil:</span> Retrurns next integer that is equal to or greater than self.</p>
+  	<p class="cheat"><span class="method">floor:</span> Retruns next integer that is less than or equal to self.</p>
+  	<p class="cheat"><span class="method">find_all{}:</span> Returns all of the objects that are true.</p>
+  	<p class="cheat"><span class="method">group_by{}:</span> Groups by the result of the code block.</p>
+  	<p class="cheat"><span class="method">inject(initial){|memo, obj| block}:</span> Combines all of the objects in an enum and applies a binary operation, returns the result.</p>
+  	<p class="cheat"><span class="method">max_by{}:</span> Returns the max out of the elements after a given code block is applied.</p>
+  	<p class="cheat"><span class="method">take_while{}:</span> Returns all elements before the code block returns false.</p>
+  	<p class="cheat"><span class="method">first:</span> Returns the first value.</p>
+  	<p class="cheat"><span class="method">last:</span> Returns last value.</p>
+  	<h2 class="cheathead2">Helpful reminders</h2>
+  	<p class="reminders">It is important to pseudocode throughly before starting to code. Make sure you understand what enumerator you are using. Each is not always the best or even viable one. Remember don't use a method unless you totally understand it. Good Luck!</p>
+  	<footer>
+  		<div class="footer">
+  		  <p class="main-footer"><b>Contact Info</b></p>
+        <p><b>Author:</b> Liam Mackey</p>
+        <p><b>Email:</b> <a href="mailto: liammac21@gmail.com">liammac21@gmail.com</a></p>
+        <p><b>Phone:</b> 631-926-9213</p>
+  		</div>
+  	</footer>
+</body>
+</html>

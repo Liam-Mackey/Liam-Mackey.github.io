@@ -1,0 +1,97 @@
+.title {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 50px;
+	margin: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1.5em;
+}
+
+nav ul {
+	display: inline-block;
+	width: 90%;
+	margin: 2%;
+	text-align: center;
+	border-bottom: 3px solid black;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	font-family: 'Mate SC', serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+}
+
+.cheathead {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin: 15px;
+	text-transform: uppercase;	
+}
+
+.cheathead2 {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 27px;
+	margin: 9px;
+	text-transform: uppercase;	
+}
+
+.cheat {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	margin: 5px;
+}
+
+span {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.reminders {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+	margin: 5px;	
+}
+
+.footer {
+	width: 90%;
+	height: 20%;
+	padding: 35px;
+	margin: 35px;
+}
+
+.footer p {
+	text-align: center;
+	font-weight: normal;
+	margin: 1px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.main-footer {
+	font-size: 25px;
+}
+
+a:hover {
+	color: blue;
+}
+
+a:visited {
+	color: black;
+}
+
+a:visited:hover {
+	color: blue;
+}
