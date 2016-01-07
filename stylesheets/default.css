@@ -1,6 +1,6 @@
 body {
-	background-color: rgba(186,197,167,0.8);
-	margin: 5px;
+	background-color: rgba(197,213,203,1);
+	margin: 40px;
 }
 
 .title {
@@ -22,7 +22,7 @@ nav ul {
 	min-width: 50%;
 	text-align: center;
 	/*background-color: rgba(214,229,187,0.6);*/
-	background-color: rgba(128,128,128,0.3);
+	background-color: rgba(159,168,163,1);
 	box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.3);
 }
 
@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-	padding: 15px;
+	padding: 10px;
 	display: block;
 	text-decoration: none;
 	font-size: 40px;
@@ -41,15 +41,15 @@ nav ul li a {
 }
 
 a:hover {
-	color: #00b300;
+	border-bottom: 2px solid black;
 }
 
 a:visited {
-	color: #660066;
+	color: black;
 }
 
 a:visited:hover {
-	color: #FF9933;
+	border-bottom: 2px solid black;
 }
 
 a:active {
@@ -93,18 +93,18 @@ img {
 }
 
 .final-span {
-	color: #336600;
-	font-weight: bold;
+	color: black;
+	font-weight: bolder;
 }
 
 .footer {
-	width: 90%;
+	width: 97%;
 	height: 20%;
-	background-color: rgba(128,128,128, 0.3);
-	padding: 35px;
-	margin: 35px;
+	background-color: rgba(159,168,163,1);
+	padding: 10px;
+	margin: 5px;
 	border: 3px solid black;
-	border-radius: 20px;
+	/*border-radius: 20px;*/
 	box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.3)
 }
 
@@ -123,7 +123,7 @@ img {
 	font-family: 'Lora', serif;
 	font-size: 25px;
 	display: inline-block;
-	margin: 2%;
+	margin: 2% 8% 2% 8%;
 }
 
 .p1 a {
