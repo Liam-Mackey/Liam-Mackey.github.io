@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Week 7</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/skel-layers.min.js"></script>
+		<script src="../js/init.js"></script>
+		<!-- <noscript> -->
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
+		<!-- </noscript> -->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="../index.html">Liam</a></strong> by Mackey</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../contact.html">Contact</a></li>
+						<li><a href="index.html">Blog</a></li>
+						<li><a href="../projects/index.html">Projects</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>JavaScript Constructor Functions vs. Ruby Classes</h2>
+						<p>12/21/2015</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="http://stasiab.files.wordpress.com/2012/01/sloth5.jpg" alt="" /></a>
+                 <p class="main-paragraph">Ruby classes are templates for objects in ruby programming. JavaScript constructors are Prototypes for objects in JavaScript Programming. So why the difference and how do these techniques relate and differ? Lets dive right into that!</p>
+                 <p class="main-paragraph">JavaScript is a classless Object Orientated Programming (OOP) language. What this means is that JavaScript accomplished the feats of classes in languages like ruby by using a special type of function called a constructor. A constructor function basically lays out the template for all Objects that inherit from the constructor object as well as all instances of the constructor object.</p>
+                 <p class="main-paragraph">Ruby is an OOP language as well. In ruby however you can and must use classes to lay out the format for objects. In Ruby each class has an initialize method that is called when an instance of the class is created. Ruby classes can also have instance methods, which are the same thing as functions in JavaScript, Instance methods basically allow any instance of that class to have access to those methods.</p>
+                 <p class="main-paragraph">Ruby classes and JavaScript constructor functions are similar in that they both are templates for all new instances of the themselves. In ruby you can add methods (i.e functions) right into the class however in JavaScript it is common practice to add functions (i.e methods) with a prototype method. This allows for all instances of the constructor function to have the added functions. This is one major difference. Another is that the syntax for constructor functions and classes is totally different. Take a look at last week’s post about the Ruby sloth class then see the partially completed JavaScript sloth constructor function. In reality both JavaScript constructor objects and Ruby Classes get the same job done, but I would say I find the idea of classes easier to implement and understand than constructor functions. Now go forth and code!</p>
+         </section>
+         <pre><code style="font-size: 17px;">
+            var Sloth = function(name, species, age){
+                this.name = name;
+                this.species = species;
+                this.age = age;
+            };
+            var timmy = new Sloth("Timothy Purple Haze Stweart", "Three Toed", 4);
+         </code></pre>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

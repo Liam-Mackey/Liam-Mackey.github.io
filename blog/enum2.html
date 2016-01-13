@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Week 5</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/skel-layers.min.js"></script>
+		<script src="../js/init.js"></script>
+		<!-- <noscript> -->
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
+		<!-- </noscript> -->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="../index.html">Liam</a></strong> by Mackey</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../contact.html">Contact</a></li>
+						<li><a href="index.html">Blog</a></li>
+						<li><a href="../projects/index.html">Projects</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>The Cycle Method</h2>
+						<p>12/8/2015</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="https://static.pexels.com/photos/4700/nature-forest-moss-leaves.jpg" alt="" /></a>
+                 <p class="main-paragraph">Now that we are all learning about Ruby it is important to begin to use Enumerable methods. Although there are tons of these, in this blog post I will only be talking about one in particular. That method is Cycle. Cycle is an awesome built in ruby method. Basically it saves us the work of having to write long loops to iterate through each element in an enumerable several times.</p>
+                 <p class="main-paragraph">We can think of the cycle method as a hula hoop. The value we give cycle tells the us how many times we want the hula hoop to do a full rotation. If we call 2 on cycle, as seen in the example below, we will repeat the elements in the enumerable 2 times, like swinging the hula twice. If we do not give cycle an argument we will end up with an infinite loop on our hands. You can do cool things with cycle. For example if you set a variable equal to an enumerable with cycle called on it, without a block of course, it will return an enumerable. You can then use the .next method to iterate through the enumerable. </p>
+                 <p class="main-paragraph">You can also use the reverse_each method and call cycle on it to reverse cycle through an argument. This could be very helpful if you needed to implement a block of code on an enumerable forever, but in reverse. </p>
+                 <p class="main-paragraph">The cycle method is very useful. We could use it to write a program that cycles through chores and assigns them to different individuals throughout the week. We could also use it to loop a set number of times over an array and print out the variables while a program is loading. There are tons of uses for the cycle method. I hope that you guys will get to use this method in the future.  I think it will come in handy for me at some point too.</p>
+                 <pre><code>
+                    >> arr.cycle(2) { |i| puts i }
+                        first
+                        middle
+                        last
+                        first
+                        middle
+                        last
+
+                    >> cycle_enum = arr.cycle
+                    => #>Enumerator: ["first", "middle", "last"]:cycle>
+                    >> cycle_enum.next
+                    => "first" 
+                    >> cycle_enum.next
+                    => "middle" 
+                    >> cycle_enum.next
+                    => "last" 
+                    >> cycle_enum.next
+                    => "first"
+
+                    >> [:first, :middle, :last].reverse_each.cycle(2) { |i| puts i } 
+                        last
+                        middle
+                        first
+                        last
+                        middle
+                        first
+                 </code></pre>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
