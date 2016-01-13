@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Week 6</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/skel-layers.min.js"></script>
+		<script src="../js/init.js"></script>
+		<!-- <noscript> -->
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
+		<!-- </noscript> -->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="../index.html">Liam</a></strong> by Mackey</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../contact.html">Contact</a></li>
+						<li><a href="index.html">Blog</a></li>
+						<li><a href="../projects/index.html">Projects</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Ruby Classes</h2>
+						<p>12/15/2015</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="http://www.sloths.org/3-toedsloth.jpg" alt="" /></a>
+             <p class="main-paragraph">So if you do not know what I just typed below you shouldn’t be worried, I am going to explain it. In short what I wrote is the template for a sloth. This template is called a class. Classes are used to organize methods and variables for objects together. You can think of methods being like actions the object can take and variables being its characteristics. A class is sort of like a blueprint for an Object (Which in programming can be pretty much anything).</p>
+                <pre><code style="font-size: 17px;">
+                    class Sloth
+                        attr_accessor :name, :species, :age
+
+                        def initialize(name, species, age)
+                            @name = name 
+                            @species = species
+                            @age = age
+                        end
+
+                        def yawn
+                            puts “Arrraghoow #{@name} is tired”
+                        end
+
+                        def sleep
+                            10.times{puts “Zzzzzzz”}
+                        end
+
+                        def eat(food)
+                            puts “#{@name} is eating #{food}”
+                        end
+
+                        def climb
+                            puts “A #{@age} year old #{@species} sloth named #{@name} is climbing a tree”
+                        end
+
+                        def print_info
+                            puts “Name: #{@name}”
+                            puts “Age: #{@age}”
+                            puts “Species: #{@species}”
+                        end
+                    end
+
+                    tim = Sloth.new(“Tim”, 3, “Three Toed”)
+
+                    p tim.name
+
+                    => “Tim”
+
+                    tim.eat(“Mango”) 
+                    => “Tim is eating Mango”
+
+                    tim.print_info
+                    => Name: Tim
+                    Age: 3
+                    Species: Three Toed
+                 </code></pre>
+                 <p class="main-paragraph">So what do we have here. As you can see I am declaring a class named Sloth. So what that does is basically allows me to layout a blueprint for all the sloths my program will create. The attr_accessor is a bit more confusing but for now just view it as a way for us to access the variables (characteristics of the sloth) outside of our Sloth class. The first method called initialize is automatically performed whenever we create a new sloth, like we did for tim. The arguments we give the method are the characteristics we need to create our sloth, each sloth must have a name, age, and species! As you may have noticed we have prefixed some of our variables with the @ symbol. This is because this symbol indicates them as being Instance variables. This means they can travel between methods in the class and are available to every instance of the class, i.e every sloth we create.</p>
+                 <p class="main-paragraph">All of the other methods besides initialize have to be called on. But as you may have noticed these methods are actions that a sloth would take, maybe with the exception of print_info. So this illustrates the point that methods in a class are sort of like actions the real world object would take. These are called instance methods because they are available to every instance of the Sloth class. So every sloth our program creates can yawn, sleep, eat, and climb, as well as print_info, but that is more of just for checking that our program is working right. </p>
+                 <p class="main-paragraph">You now know the basics of writing classes in ruby. I suggest that you give it a try. Classes are used in Object Oriented Programming to imitate the way things work in the real world. So maybe make a class for Car, or Cat or even Liam's crappy old Subaru. Now go forth and code!</p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
